@@ -1,0 +1,35 @@
+MiniCoin Beta Binary License
+Copyright © 2026 Nimbus. All rights reserved.
+
+1. Free personal use
+The copyright holder permits you to download official MiniCoin Beta application
+binaries free of charge, install and run them on Macs you own or control for your
+personal and household bookkeeping, and make backup copies for that use.
+
+2. Source and distribution rights
+This permission applies to official Beta application binaries. MiniCoin source
+code and MiniCoin-owned assets remain proprietary. No source-code license or
+right to publish, sublicense, sell, or redistribute MiniCoin is granted. Rights
+that cannot lawfully be restricted remain unaffected.
+
+3. Third-party software
+Bundled third-party software and fonts remain covered by their own licenses in
+THIRD_PARTY_NOTICES.md and the bundled resource notices. Those licenses govern
+the corresponding components and are not limited by this Beta license.
+
+4. Optional services and your data
+The free download does not include AI services, Plaid access, or third-party
+subscriptions. You choose whether to configure them and use credentials and
+access available to you. You retain your rights in the financial data you enter
+or import. This license grants no right for the copyright holder to collect it.
+
+5. Beta status and recovery
+This is a prerelease application. Keep verified backups before upgrades and
+review financial records and AI suggestions. Updates are installed manually.
+Encrypted backup recovery requires the matching Keychain key; possession of a
+backup file alone is insufficient.
+
+6. Warranty
+To the extent permitted by applicable law, the Beta application is provided
+"as is", without warranties of merchantability, fitness for a particular purpose,
+or noninfringement. Mandatory consumer rights remain unaffected.
