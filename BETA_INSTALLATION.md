@@ -32,6 +32,8 @@ Beta updates are manual; there is no automatic updater.
 
 The live ledger is stored at `~/Library/Application Support/MiniCoin/minicoin-native.sqlite`. App authentication does not encrypt that live SQLite database.
 
+If MiniCoin cannot read the saved backup key, or the stored key is invalid, it stops the backup operation and retains the key. Restoring with a missing key also stops; it does not create a substitute. Preserve the backup and Keychain, resolve the system access problem, then retry. A failed key-creation attempt must not replace an existing key.
+
 An older app may not support a database migrated by a newer version. **Replacing the app with an older binary is not a safe database rollback.** Roll back only to an app and pre-upgrade backup known to work together, with the required Keychain key retained. Keep the newer ledger intact until recovery is verified. If the release notes do not establish compatibility, request recovery guidance before opening that ledger in the older app.
 
 ## Report a problem
