@@ -1,29 +1,25 @@
-# MiniCoin for macOS
+# MiniCoin
 
-Free personal-use Beta downloads and feedback. MiniCoin is a native, local-first household bookkeeping app for **macOS 26 or later**. The application is proprietary; this repository contains release material only, not its source code.
+MiniCoin **1.0.0 Beta 3** is a free, proprietary, local-first bookkeeping app for personal and household use on **macOS 26 or later**. The application source stays private; this repository hosts release material and feedback.
 
-**Status: the first Beta candidate is being validated. No public installer has been released yet.** Draft releases are visible only to authorized repository maintainers. A published prerelease will appear on the [Releases page](https://github.com/lsyrain/MiniCoin-Releases/releases) after its downloaded installer has passed acceptance.
+**[Download Beta 3](https://github.com/lsyrain/MiniCoin-Releases/releases/download/v1.0.0-beta.3/MiniCoin-1.0.0-beta.3-universal-ad-hoc.zip)** · [Release notes and validation scope](https://github.com/lsyrain/MiniCoin-Releases/releases/tag/v1.0.0-beta.3) · [SHA-256 checksum](https://github.com/lsyrain/MiniCoin-Releases/releases/download/v1.0.0-beta.3/SHA256SUMS)
 
-## Start with local bookkeeping
+## Install and start
 
-MiniCoin includes manual cash accounts and transactions, categories and budgets, Overview totals, transaction review, CSV export, app authentication, and encrypted backup/restore. In the setup guide, choose **Finish later**, then **Accounts → Add cash**. You can use local bookkeeping without AI, a Plaid account, or an internet connection.
+1. Download and unzip the archive. Quit any older MiniCoin app, then move **MiniCoin.app** to **Applications** and open it there.
+2. This Beta is ad-hoc signed and **not notarized by Apple**. If macOS blocks the first launch because it cannot verify the developer, attempt to open the app once, then choose **System Settings → Privacy & Security → Open Anyway** for MiniCoin and confirm the system prompt. Managed Macs may restrict this option; do not disable security protections globally.
+3. Unlock through the native Mac authentication dialog. In the setup guide, choose **Finish later**, then open **Accounts → Add cash** to start manual bookkeeping without AI or a bank connection.
 
-AI and personal bring-your-own-Plaid connections are optional, experimental integrations. You supply your own model/service and eligible Plaid developer access. No AI subscription or bank-connection service is included. Availability for a particular model or bank is not guaranteed.
+The download includes Apple silicon and Intel binaries. See the release notes for the tested configurations and current limitations.
 
-## Installation
+AI and personal BYO-Plaid bank connections are optional, experimental integrations. Configure your own model/service or eligible Plaid developer account if you choose to use them; no subscription or Plaid access is included.
 
-The first Beta uses ad-hoc signing and is **not notarized by Apple**. After downloading and moving MiniCoin.app into Applications, try opening it once. If macOS blocks it because the developer cannot be verified, use **System Settings → Privacy & Security → Open Anyway** for MiniCoin and confirm. Managed Macs may prevent this exception. See [Apple's instructions](https://support.apple.com/en-us/102445).
+## Updates and recovery
 
-Read [installation, updates, and recovery](BETA_INSTALLATION.md) before testing. The download will include the exact version, architecture list, and a SHA-256 checksum.
+Updates are installed manually. Before upgrading, create and verify an encrypted backup and retain the matching Keychain key. A backup file alone is insufficient for recovery on another Mac. An older app may not support a migrated database, so replacing the app alone is not a safe rollback.
 
-## Data and recovery
+Read the [installation and recovery guide](BETA_INSTALLATION.md), [free personal-use Beta license](BETA_LICENSE.txt), and [third-party notices](THIRD_PARTY_NOTICES.md).
 
-The ledger stays in local SQLite. App authentication protects access to the app; it does not encrypt the live database. AI/Plaid credentials and backup keys use macOS Keychain. A remote AI provider receives the fields disclosed during setup.
+## Feedback
 
-Keep a verified encrypted backup and this Mac's Keychain before upgrading. A backup file alone is insufficient for recovery. Beta updates are manual, and database migrations can make a simple app downgrade unsafe.
-
-## License and feedback
-
-Official Beta binaries are free for personal and household use under [BETA_LICENSE.txt](BETA_LICENSE.txt). The source remains proprietary. Third-party software retains the licenses in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-
-Use [Issues](https://github.com/lsyrain/MiniCoin-Releases/issues) for non-sensitive bug reports. Include app/macOS versions and reproduction steps. Do not attach financial records, databases, backups, credentials, keys, or account numbers. For a security concern, request a private contact route without posting the vulnerability details.
+Report non-sensitive problems through [Issues](https://github.com/lsyrain/MiniCoin-Releases/issues), including your app/macOS version and steps to reproduce. Keep financial records, credentials, tokens, keys, databases, and backups out of public reports.
